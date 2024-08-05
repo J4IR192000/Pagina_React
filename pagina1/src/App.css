@@ -1,0 +1,34 @@
+header{
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+  display: inline-block;
+  padding-inline: 5% 5%;
+  background-color: blueviolet;
+  width: 100%;
+  height: 100%;
+}
+
+.Buttons{
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.Img_container{
+  padding: 5px;
+  width: 5%;
+  height: 100%;
+}
+
+.Img_1{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit:contain;
+}
