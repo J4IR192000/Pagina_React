@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import viteLogo from '/logo.svg'
 import './App.css'
 
 function App() {
   return (
     <>
-      <html>
-        <Header/>
-      </html>
+        <header>
+          <Header/>
+        </header>
+          <Body/>
     </>
   )
 }
@@ -16,26 +16,32 @@ function App() {
 function Header() {
   return (
     <>
-      <header>
+      <div className='header-content'>
         <div className='Img_container'>
-          <img src="https://img.freepik.com/vector-gratis/cohete-volando-luna-dibujos-animados-vector-icono-ilustracion-tecnologia-transporte-icono-aislado_138676-5157.jpg?w=740&t=st=1722757563~exp=1722758163~hmac=f47eb2a7e2a4afed968e6b6c95aa447dc2781caf9df45c8ca3e3b85d42c31db6" className='Img_1'/>
+          <img src="/src/assets/logo.svg" className='Img_1'/>
         </div>
-        <Nav/>
-      </header>
+        <nav>
+        <ul>  
+          <li><a href='#' className='button-lu'>Proyectos</a></li>
+          <li><a href='#' className='button-lu'>Sobre mi</a></li>
+        </ul>
+        </nav>
+          <a href='#' ><button className='Button-contact'>Contacto</button></a>
+      </div>
+    </>   
+  )
+}
+
+function Body() {
+  return (
+    <>
+      <div className='Body-container'>
+        <br/>
+        <h1 className='Tittle'>Bienvenido</h1>
+      </div>
     </>
   )
 }
 
-function Nav() {5
-  return (
-    <>
-      <nav>
-        <a href='#' className='Buttons'>Inicio</a>
-        <a href='#' className='Buttons'>Proyectos</a>
-        <a href='#' className='Buttons'>Informacion</a>
-      </nav>
-    </>
-  )
-}
 
 export default App
