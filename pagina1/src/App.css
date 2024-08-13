@@ -19,8 +19,7 @@
 
 .Img_container{
   display: inline-flex;
-  margin: 5px; 
-  width: 7%;
+  width: 90px;
 }
 
 .Img_1{
@@ -69,12 +68,15 @@ header nav li a:hover{
 }
 
 .Body-container{
-  margin: 0;
+  margin: 10px;
   margin-inline: 5%;
-  background-color: whitesmoke;
-  color: dimgrey;
+  border: solid;
+  border-color: rgb(85, 85, 85);
+  border-radius: 20px;
+  color: rgb(224, 224, 224);
 }
 
 .Body-container .Tittle{
   font-size: 30px;
+  margin-left: 20px;
 }

@@ -18,10 +18,11 @@ function Header() {
     <>
       <div className='header-content'>
         <div className='Img_container'>
-          <img src="/src/assets/logo.svg" className='Img_1'/>
+          <a href='#'><img src="/src/assets/logo.svg" className='Img_1'/></a>
         </div>
         <nav>
         <ul>  
+          <li><a href='#' className='button-lu'>Blog</a></li>
           <li><a href='#' className='button-lu'>Proyectos</a></li>
           <li><a href='#' className='button-lu'>Sobre mi</a></li>
         </ul>
@@ -38,6 +39,7 @@ function Body() {
       <div className='Body-container'>
         <br/>
         <h1 className='Tittle'>Bienvenido</h1>
+        <br/>
       </div>
     </>
   )
