@@ -5,6 +5,7 @@
   font-family: monospace;
   font-size: 20px;
   text-decoration: none;
+  text-align: justify;
 }
 
 .header-content{
@@ -30,6 +31,8 @@
 }
 .Img_1:hover{
   transform: scale(1.2);
+  color: aliceblue;
+  border: solid;
 }
 
 header nav li{
@@ -48,6 +51,9 @@ header nav li:hover{
 
 header nav li a:hover{
   color: white;
+  border-radius: 10px;
+  padding: 5px;
+  border: solid;
 }
 
 .header-content .Button-contact{
@@ -62,13 +68,13 @@ header nav li a:hover{
 }
 
 .header-content .Button-contact:hover{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transform: scale(1.1);
 }
 
-.Body-container{
-  margin: 10px;
+.Body-container{ /*Caja del Body*/
+  margin: 20px;
   margin-inline: 5%;
   border: solid;
   border-color: rgb(85, 85, 85);
@@ -76,7 +82,46 @@ header nav li a:hover{
   color: rgb(224, 224, 224);
 }
 
+.Body-content{ /*Contenido de la caja*/
+  margin: 0px/*U*/ 20px/*R->*/ 20px/*D*/ 20px/*L<-*/;
+}
+
 .Body-container .Tittle{
   font-size: 30px;
-  margin-left: 20px;
+}
+
+.Me-content{
+  display: flex;
+  width: 100%;
+}
+
+.Body-text{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.Img_photo{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.Body-container .Button-contact{
+  font-weight: 100;
+  color: black;
+  padding:  3px 50px;
+  background:  white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.Body-container .Button-contact:hover{
+  background-color: yellowgreen;
+  color: white;
+  transform: scale(1.1);
 }

@@ -9,6 +9,7 @@ function App() {
           <Header/>
         </header>
           <Body/>
+          <Me/>
     </>
   )
 }
@@ -27,7 +28,7 @@ function Header() {
           <li><a href='#' className='button-lu'>Sobre mi</a></li>
         </ul>
         </nav>
-          <a href='#' ><button className='Button-contact'>Contacto</button></a>
+          <button className='Button-contact'>Contacto</button>
       </div>
     </>   
   )
@@ -38,8 +39,29 @@ function Body() {
     <>
       <div className='Body-container'>
         <br/>
-        <h1 className='Tittle'>Bienvenido</h1>
+        <div className='Body-content'>
+          <h1 className='Tittle'>Bienvenido</h1>
+        </div>
+      </div>
+    </>
+  )
+}
+
+function Me() {
+  return (
+    <>
+      <div className='Body-container'>
         <br/>
+        <div className='Body-content'>
+          <h1 className='Tittle'>Sobre mi</h1>
+          <br/>
+          <div className='Me-content'>
+            <p className='Body-text'>Hola, soy Jair Perez <br/> Informatico, desarrollador fullstack. Apasionado de la tecnologia.<br/>
+            Siempre tengo curiosidad por aprender más sobre nuevas tecnologías y codificación creativa.</p>
+            <img className='Img_photo' src="src/assets/foto.jpg"></img>
+          </div>
+          <button className='Button-contact'>CV</button>
+        </div>
       </div>
     </>
   )
