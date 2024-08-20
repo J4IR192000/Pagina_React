@@ -10,6 +10,9 @@ function App() {
         </header>
           <Body/>
           <Me/>
+          <Proyects/>
+          <Blog/>
+          <Footer/>
     </>
   )
 }
@@ -17,19 +20,19 @@ function App() {
 function Header() {
   return (
     <>
-      <div className='header-content'>
+      <div className='header-content' >
         <div className='Img_container'>
-          <a href='#'><img src="/src/assets/logo.svg" className='Img_1'/></a>
+          <a href='#Body'><img src="/src/assets/logo.svg" className='Img_1'/></a>
         </div>
         <nav>
         <ul>  
-          <li><a href='#' className='button-lu'>Blog</a></li>
-          <li><a href='#' className='button-lu'>Proyectos</a></li>
-          <li><a href='#' className='button-lu'>Sobre mi</a></li>
+          <li><a href='../blog.html' className='button-lu'>Blog</a></li>
+          <li><a href='#Proyects' className='button-lu'>Proyectos</a></li>
+          <li><a href='#Me' className='button-lu'>Sobre mi</a></li>
         </ul>
         </nav>
-          <button className='Button-contact'>Contacto</button>
-      </div>
+        <button className='Button-contact' id='Button-contact' onClick={() => alert('Se dio click a contacto')} >Contacto</button>
+        </div>
     </>   
   )
 }
@@ -37,7 +40,7 @@ function Header() {
 function Body() {
   return (
     <>
-      <div className='Body-container'>
+      <div className='Body-container' id="Body">
         <br/>
         <div className='Body-content'>
           <h1 className='Tittle'>Bienvenido</h1>
@@ -50,22 +53,67 @@ function Body() {
 function Me() {
   return (
     <>
-      <div className='Body-container'>
+      <div className='Body-container' id="Me">
         <br/>
         <div className='Body-content'>
           <h1 className='Tittle'>Sobre mi</h1>
-          <br/>
           <div className='Me-content'>
-            <p className='Body-text'>Hola, soy Jair Perez <br/> Informatico, desarrollador fullstack. Apasionado de la tecnologia.<br/>
+            <p className='Body-text'>Hola, soy Jair Perez <br/> Informatico, desarrollador fullstack apasionado por la tecnologia.<br/>
             Siempre tengo curiosidad por aprender más sobre nuevas tecnologías y codificación creativa.</p>
-            <img className='Img_photo' src="src/assets/foto.jpg"></img>
+            <img className='Img_photo' src="src/assets/foto.jpg" />
           </div>
-          <button className='Button-contact'>CV</button>
+          <div className='Buttons-content'>
+            <button className='Button-contact Button-CV'><i className="fa-regular fa-file"></i>Curriculum</button>
+            <button className='Button-contact Button-GitHub'><i className="fa-brands fa-github"></i>GitHub</button>
+            <button className='Button-contact Button-Instagram'><i className="fa-brands fa-instagram"></i>Instagram</button>
+            <button className='Button-contact Button-LinkedIn'><i className="fa-brands fa-linkedin"></i>LinkdIn</button>
+          </div>
         </div>
       </div>
     </>
   )
 }
 
+function Proyects() {
+  return (
+    <>
+      <div className='Body-container'id="Proyects">
+        <br/>
+        <div className='Body-content'>
+          <h1 className='Tittle'>Proyectos</h1>
+          <br/>
+          <ul>
+            <li>Titulo<a href='#'> <i className="fa-solid fa-caret-down"></i></a></li>
+            <p>Descripcion <br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, hic ex quibusdam eius reiciendis illo quo unde dicta. Veritatis quia assumenda blanditiis alias asperiores consequatur maiores consectetur dolores repudiandae natus.</p>
+            <button children='Open-button'><i className="fa-solid fa-play"></i> Abrir</button>
+          </ul>
+        </div>
+      </div>
+    </>
+  )
+}
+
+function Blog() {
+  return (
+    <>
+      <div className='Body-container'>
+        <br/>
+        <div className='Body-content'>
+          <h1 className='Tittle'>Blog</h1>
+        </div>
+      </div>
+    </>
+  )
+}
+
+function Footer() {
+  return (
+    <>
+      <footer>
+          <p><i className ="fa-regular fa-copyright"></i> Copyright</p>
+      </footer>
+    </>
+  )
+}
 
 export default App

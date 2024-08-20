@@ -7,12 +7,18 @@
   text-decoration: none;
   text-align: justify;
 }
+header{ /*Barra de navegacion fija*/
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
 
 .header-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: crimson;
+  background-color: brown;
   width: 100%;
   height: 100%;
   padding: 10px 10%;
@@ -27,7 +33,7 @@
   cursor: pointer;
   width: 100%;
   border-radius: 50%;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 .Img_1:hover{
   transform: scale(1.2);
@@ -38,7 +44,7 @@
 header nav li{
   display: inline-block;
   padding: 0 20px;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .button-lu{
@@ -64,7 +70,7 @@ header nav li a:hover{
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease;
 }
 
 .header-content .Button-contact:hover{
@@ -91,37 +97,85 @@ header nav li a:hover{
 }
 
 .Me-content{
-  display: flex;
+  display: flexbox;
   width: 100%;
+  height: 400px;
 }
 
 .Body-text{
+  margin-top: 25px;
+  float: left;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: auto;
 }
 
 .Img_photo{
+  float: right;
   width: 100%;
   max-width: 350px;
-  height: auto;
-  margin-top: 10px;
+  margin-top: 25px;
   border-radius: 10px;
 }
 
-.Body-container .Button-contact{
+.Buttons-content{
+  display: block;
+}
+
+.Body-container .Button-contact, .Body-container button{
   font-weight: 100;
   color: black;
-  padding:  3px 50px;
+  width: 100%;
+  max-width: 135px;
+  height: 30px;
+  margin: 5px 5px;
+  text-align: center;
   background:  white;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease;  
 }
 
-.Body-container .Button-contact:hover{
+.Button-CV:hover{
   background-color: yellowgreen;
   color: white;
   transform: scale(1.1);
+}
+
+.Button-GitHub:hover{
+  background-color: purple;
+  color: white;
+  transform: scale(1.1);
+}
+
+.Button-Instagram:hover{
+  background-color: violet;
+  color: white;
+  transform: scale(1.1);
+}
+
+.Button-LinkedIn:hover{
+  background-color: darkblue;
+  color: white;
+  transform: scale(1.1);
+}
+
+footer{
+  background-color: brown;
+  padding: 1rem;
+  color: white;
+}
+
+footer p{
+  font-size: 15px;
+}
+
+.Body-container ul{
+  padding-left: 20px;
+}
+
+.Body-container li{
+  font-size: 25px;
+  list-style-type: circle;
 }
