@@ -63,10 +63,10 @@ function Me() {
             <img className='Img_photo' src="src/assets/foto.jpg" />
           </div>
           <div className='Buttons-content'>
-            <button className='Button-contact Button-CV'><i className="fa-regular fa-file"></i>Curriculum</button>
-            <button className='Button-contact Button-GitHub'><i className="fa-brands fa-github"></i>GitHub</button>
-            <button className='Button-contact Button-Instagram'><i className="fa-brands fa-instagram"></i>Instagram</button>
-            <button className='Button-contact Button-LinkedIn'><i className="fa-brands fa-linkedin"></i>LinkdIn</button>
+            <button className='Button-contact Button-CV' onClick={() => alert('Se dio click a CV')}><i className="fa-regular fa-file"></i>Curriculum</button>
+            <a href = 'https://github.com/J4IR192000' target="_blank" rel="noopener noreferrer"><button className='Button-contact Button-GitHub'><i className="fa-brands fa-github"></i>GitHub</button></a>
+            <a href = 'https://www.linkedin.com/in/oscar-jair-perez-lopez-348944215/' target="_blank" rel="noopener noreferrer"><button className='Button-contact Button-LinkedIn'><i className="fa-brands fa-linkedin"></i>LinkdIn</button></a>
+            <a href = 'https://www.instagram.com/jairp_coding/' target="_blank" rel="noopener noreferrer"><button className='Button-contact Button-Instagram'><i className="fa-brands fa-instagram"></i>Instagram</button></a>
           </div>
         </div>
       </div>
